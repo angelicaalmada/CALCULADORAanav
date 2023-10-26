@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CALCULADORAanav.MainPage"
+             BackgroundColor="Black" Title="">
+
+    <StackLayout>
+        <Frame BackgroundColor="WhiteSmoke" Padding="30" Margin="0,0,0,30">
+            <Label x:Name="calcu"  Text="" HorizontalTextAlignment="End" TextColor="Black" FontSize="36"/>
+        </Frame>
+
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <!--primera linea-->
+            <Button 
+    Grid.Row="0" Grid.Column="0" Text="AC" FontSize="Large" FontAttributes="Bold" CornerRadius="5" TextColor="Blue"
+    BackgroundColor="#fff" x:Name="BtnLimpiar" Clicked="BtnLimpiar_Clicked" BorderColor="#fff"/>
+
+            <Button 
+    Grid.Row="0" Grid.Column="1" FontSize="Large" FontAttributes="None" BorderColor="#fff"
+    CornerRadius="5" TextColor="Blue" BackgroundColor="#fff" x:Name="BtnX" Clicked="BtnX_Clicked" 
+    ImageSource="https://i.ibb.co/yYG6qLY/borrar.png"/>
+
+            <Button 
+    Grid.Row="0" Grid.Column="2" Text="%" FontSize="Large" FontAttributes="None" BorderColor="#fff"
+    CornerRadius="5" TextColor="Blue" BackgroundColor="#fff" x:Name="BtnPorcentage" Clicked="BtnPorcentaje_Clicked"/>
+
+            <Button 
+    Grid.Row="0" Grid.Column="3" Text="/" FontSize="Large" FontAttributes="None" BorderColor="#fff"
+    CornerRadius="5" TextColor="Blue" BackgroundColor="#fff" Clicked="BtnCommonOperation_Clicked"/>
+
+            <!--segunda linea-->
+
+            <Button 
+    Grid.Row="3" Grid.Column="0" Text="1" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" x:Name="BtnOne" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="3" Grid.Column="1" Text="2" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="3" Grid.Column="2" Text="3" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="1" Grid.Column="3" Text="*" FontSize="Large" FontAttributes="None" BorderColor="#fff"
+    CornerRadius="5" TextColor="Blue" BackgroundColor="#fff" Clicked="BtnCommonOperation_Clicked"/>
+
+            <!--TERCERA LINEA-->
+
+            <Button 
+    Grid.Row="2" Grid.Column="0" Text="4" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="2" Grid.Column="1" Text="5" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="2" Grid.Column="2" Text="6" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="2" Grid.Column="3" Text="-" FontSize="Large" FontAttributes="None" BorderColor="#fff"
+    CornerRadius="5" TextColor="Blue" BackgroundColor="#fff" Clicked="BtnCommonOperation_Clicked"/>
+
+            <!-- CUARTA LINEA-->
+
+            <Button 
+    Grid.Row="1" Grid.Column="0" Text="7" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="1" Grid.Column="1" Text="8" FontSize="Large" FontAttributes="None"
+    BorderColor="Black" CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="1" Grid.Column="2" Text="9" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" Text="+" FontSize="Large" FontAttributes="Bold" BorderColor="Blue"
+    CornerRadius="15" TextColor="White" BackgroundColor="Blue" Clicked="BtnCommonOperation_Clicked"/>
+
+            <!--QUINTA LINEA-->
+
+            <Button 
+    Grid.Row="4" Grid.Column="0" Text="." FontSize="Large" FontAttributes="None" BorderColor="Black" CornerRadius="5"
+    TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="4" Grid.Column="1" Text="0" FontSize="Large" FontAttributes="None" BorderColor="Black"
+    CornerRadius="5" TextColor="Black" BackgroundColor="White" Clicked="BtnCommon_Clicked"/>
+
+            <Button 
+    Grid.Row="4" Grid.Column="2" Text="=" FontSize="Large" FontAttributes="None" BorderColor="Blue"  
+    CornerRadius="5" TextColor="#fff" BackgroundColor="Blue" Clicked="Btnigual_Clicked"/>
+
+
+
+
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
